@@ -153,10 +153,7 @@
  /* ********** More feature styles ********* */
  .special {
      display: flex;
-     justify-content: space-around;
-     width: 100%;
-     max-width: 1440px;
-     height: auto;
+     gap: 10%;
      padding: 0 15%;
      margin: 130px 0;
  }
@@ -210,15 +207,12 @@
 
 
  .special-btn {
-     width: 100%;
-     max-width: 300px;
      background: var(--orange);
      border-radius: 8px;
-     font-weight: 700;
-     font-size: 45px;
+     font-weight: 600;
+     font-size: 35px;
      color: var(--white);
-     text-align: center;
-     padding: 22px 0;
+     padding: 22px 20px;
      position: absolute;
      left: -30px;
      bottom: -77px;
@@ -226,7 +220,7 @@
 
  .small-text {
      font-weight: 500;
-     font-size: 20px;
+     font-size: 18px;
      text-align: center;
      color: var(--white);
  }
@@ -442,6 +436,9 @@
      /* Special Feature */
      .special {
          flex-direction: column;
+     }
+     .special-btn{
+        position: relative;
      }
      .achievement {
          flex-wrap: wrap;
