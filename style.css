@@ -1,4 +1,4 @@
- /* Fonts */
+ /* Fonts and utilities */
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
 
  :root {
@@ -6,10 +6,6 @@
      --white: #FFFFFF;
      --gray: #727272;
      --orange: #FF900E;
- }
-
- .hide {
-     display: none;
  }
 
  * {
@@ -25,7 +21,7 @@
      height: 4760px;
      background: var(--white);
  }
-
+/* -------***-------- */
 
  /* Full navigation section */
  .full-nav {
@@ -74,7 +70,7 @@
  .nav-headline>h1 {
      font-weight: 700;
      font-size: 64px;
-     color: var(--text-colour);
+     color: var(--black);
  }
 
  .nav-text {
@@ -101,11 +97,7 @@
      border-radius: 8px;
      margin: 45px 0;
  }
-
  /* Navigation section end */
-
-
-
 
 
  /* Main sections styles */
@@ -158,7 +150,6 @@
      margin-bottom: 32px;
  }
 
-
  /* ********** More feature styles ********* */
  .special {
      display: flex;
@@ -173,8 +164,6 @@
  .special-feature {
      width: 100%;
      max-width: 586px;
-     /* height: 100%; */
-     /* max-height: 982px; */
  }
 
  .special-header>h2 {
@@ -230,7 +219,6 @@
      color: var(--white);
      text-align: center;
      padding: 22px 0;
-     /* position: relative; */
      position: absolute;
      left: -30px;
      bottom: -77px;
@@ -257,8 +245,7 @@
      width: 100%;
      max-width: 708px;
  }
-
-
+/* Feature section end */
 
  /* Fact and Achievements */
  .fact {
@@ -274,7 +261,6 @@
 
 
  .achievement {
-     /* width: 100%; */
      display: flex;
      justify-content: space-between;
      margin-left: 10%;
@@ -287,10 +273,14 @@
      padding: 5px 5px;
      border: 1px solid var(--orange);
      border-radius: 8px;
-     /* width: 100%; */
      width: 240px;
-     /* height: 100%; */
      height: 240px;
+ }
+
+ .achievement-box:hover{
+    background-color: rgb(137, 205, 183);
+    transform: scale(1.1);
+    transition: 1.2s;
  }
 
  .achievement-box>img {
@@ -314,12 +304,38 @@
 
  /* Fact and Achievements end */
 
+ /* ----------sponsor section----------- */
+ .sponsors {
+     text-align: center;
+     margin: 130px 0;
+ }
 
+ .sponsors-text {
+     font-weight: 400;
+     font-size: 16px;
+     color: var(--gray);
+     padding: 25px 0 50px 0;
+ }
 
+ .sponsors-title {
+     font-weight: 700;
+     font-size: 45px;
+     color: var(--black);
+ }
 
+ .sponsors-logo {
+     max-width: fit-content;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 5%;
+     margin: 0 10%;
+ }
 
-
-
+ .sponsors-logo>img {
+     filter: grayscale(100%);
+ }
+/* -----sponsor section end------- */
 
  /* ---------------Extra section CSS---------------- */
  .comment-box {
@@ -373,8 +389,23 @@
  .comment-box button:hover {
      background-color: aquamarine;
  }
-
  /* Extra section end */
+
+
+ /* Footerrr star */
+ footer {
+     height: 245px;
+     text-align: center;
+ }
+
+ footer>p {
+     font-weight: 400;
+     font-size: 20px;
+     background-color: #FFF4E7;
+     border-radius: 5px;
+     padding: 38px auto;
+ }
+/* Footerrr end  */
 
 
 
@@ -382,23 +413,20 @@
  @media only screen and (max-width: 576px) {
 
      /* Responsive for Navigation bar */
-     *{
-        /* width: 90%; */
-        word-wrap: break-word;
-
+     * {
+         word-wrap: break-word;
      }
      .nav-bar {
          flex-direction: column;
          align-items: flex-start;
          gap: 20px;
      }
-     .nav-headline>h1{
-        font-size: 50px;
+     .nav-headline>h1 {
+         font-size: 50px;
      }
-     .nav-bar-title{
-        font-size: 35px;
+     .nav-bar-title {
+         font-size: 35px;
      }
-
      ul {
          flex-direction: column;
      }
@@ -408,22 +436,22 @@
      .feature {
          flex-wrap: wrap;
      }
-
      .two-two {
          grid: none;
      }
-
-
      /* Special Feature */
      .special {
          flex-direction: column;
      }
-
      .achievement {
          flex-wrap: wrap;
          gap: 20px;
-         /* width: 100%;
-    margin: 0; */
+     }
+
+          /* Responsive for sponsor logo */
+     .sponsors-logo {
+         flex-direction: column;
+         column-gap: 200px;
      }
 
  }
