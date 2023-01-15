@@ -324,7 +324,6 @@
  }
 
  .sponsors-logo {
-     max-width: fit-content;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -333,6 +332,7 @@
  }
 
  .sponsors-logo>img {
+    max-width: 180px;
      filter: grayscale(100%);
  }
 /* -----sponsor section end------- */
