@@ -20,7 +20,8 @@
      max-width: 1920px;
      background: var(--white);
  }
-/* -------***-------- */
+
+ /* -------***-------- */
 
  /* Full navigation section */
  .full-nav {
@@ -96,6 +97,7 @@
      border-radius: 8px;
      margin: 45px 0;
  }
+
  /* Navigation section end */
 
 
@@ -238,7 +240,8 @@
      width: 100%;
      max-width: 708px;
  }
-/* Feature section end */
+
+ /* Feature section end */
 
  /* Fact and Achievements */
  .fact {
@@ -270,10 +273,10 @@
      height: 240px;
  }
 
- .achievement-box:hover{
-    background-color: rgb(137, 205, 183);
-    transform: scale(1.1);
-    transition: 1.2s;
+ .achievement-box:hover {
+     background-color: rgb(137, 205, 183);
+     transform: scale(1.1);
+     transition: 1.2s;
  }
 
  .achievement-box>img {
@@ -325,55 +328,60 @@
  }
 
  .sponsors-logo>img {
-    max-width: 180px;
+     max-width: 180px;
      filter: grayscale(100%);
  }
-/* -----sponsor section end------- */
+
+ /* -----sponsor section end------- */
 
  /* ---------------Extra section CSS---------------- */
- .contact-info{
-    background-color: rgb(63, 56, 56);
-    position: fixed;
-    top: 40%;
-    z-index: 99999;
-    left: 0;
-  }
-  .option{
-    cursor: pointer;
-    position: relative;
-  }
-  .option i{
-    display: block;
-    width: 60px;
-    text-align: center;
-    height: 80px;
-    line-height: 60px;
-    background: #bc5c9f;
-    color: #b9b9b9;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .option:hover i{
-    color: #3498db;
-  }
-  .text{
-    position: absolute;
-    height: 60px;
-    width: 120px;
-    background: #1b1b1b;
-    top: 0;
-    z-index: -1;
-    left: -140px;
-    color: #fff;
-    line-height: 60px;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  .option:hover .text{
-    left: 60px;
-  }
-  
+ .contact-info {
+     background-color: rgb(63, 56, 56);
+     position: fixed;
+     top: 40%;
+     z-index: 99999;
+     left: 0;
+ }
+
+ .option {
+     cursor: pointer;
+     position: relative;
+ }
+
+ .option i {
+     display: block;
+     width: 60px;
+     text-align: center;
+     height: 80px;
+     line-height: 60px;
+     background: #bc5c9f;
+     color: #b9b9b9;
+     font-size: 20px;
+     transition: 0.5s;
+ }
+
+ .option:hover i {
+     color: #3498db;
+ }
+
+ .text {
+     position: absolute;
+     height: 60px;
+     width: 120px;
+     background: #1b1b1b;
+     top: 0;
+     z-index: -1;
+     left: -140px;
+     color: #fff;
+     line-height: 60px;
+     text-align: center;
+     transition: 0.5s;
+ }
+
+ .option:hover .text {
+     left: 60px;
+ }
+
 
 
  .comment-box {
@@ -396,7 +404,7 @@
      border: 1px solid #86b0b6;
  }
 
- .comment-box input: focus {
+ .comment-box input:focus {
      border: 1px solid #000;
      outline: 0;
  }
@@ -410,7 +418,7 @@
      border: 1px solid #86b0b6;
  }
 
- .comment-box textarea: focus {
+ .comment-box textarea:focus {
      border: 1px solid #000;
      outline: 0;
  }
@@ -427,6 +435,7 @@
  .comment-box button:hover {
      background-color: aquamarine;
  }
+
  /* Extra section end */
 
 
@@ -443,7 +452,8 @@
      border-radius: 5px;
      padding: 38px auto;
  }
-/* Footerrr end  */
+
+ /* Footerrr end  */
 
 
 
@@ -454,17 +464,21 @@
      * {
          word-wrap: break-word;
      }
+
      .nav-bar {
          flex-direction: column;
          align-items: flex-start;
          gap: 20px;
      }
+
      .nav-headline>h1 {
          font-size: 50px;
      }
+
      .nav-bar-title {
          font-size: 35px;
      }
+
      ul {
          flex-direction: column;
      }
@@ -474,22 +488,26 @@
      .feature {
          flex-wrap: wrap;
      }
+
      .two-two {
          grid: none;
      }
+
      /* Special Feature */
      .special {
          flex-direction: column;
      }
-     .special-btn{
-        position: relative;
+
+     .special-btn {
+         position: relative;
      }
+
      .achievement {
          flex-wrap: wrap;
          gap: 20px;
      }
 
-          /* Responsive for sponsor logo */
+     /* Responsive for sponsor logo */
      .sponsors-logo {
          flex-direction: column;
          column-gap: 200px;
